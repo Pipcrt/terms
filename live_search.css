@@ -1,0 +1,96 @@
+#elastic {
+    display: block;
+    margin: 40px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.elastic li {
+    transition: all ease 500ms;
+}
+
+.elastic li.hide {
+    display: none;
+}
+
+
+
+
+.container {
+    padding: 20px;
+}
+
+.form-control-group {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.elastic {
+    display: flex;
+    flex-direction: column;
+    /* ставим элементы в столбик */
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.card:hover {
+-webkit-box-shadow: 0px 3px 10px 5px rgba(119, 117, 150, 0.2);
+-moz-box-shadow: 0px 3px 10px 5px rgba(119, 117, 150, 0.2);
+box-shadow: 0px 3px 10px 5px rgba(119, 117, 150, 0.2);
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card-body {
+    padding: 15px;
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.card h3 {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    font-size: 19px;
+    color: #555;
+    margin: 0;
+}
+
+.elastic .hide {
+    display: none;
+}
